@@ -2,232 +2,174 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>棋类协会</title>
 		<style type="text/css">
-		    *{
-		    	margin: 0;
-		    	padding: 0;
-		    	}
-		    	.pagetop-notice{
+		
+		    .heighter{
+		    	margin: auto;center;width: 980px;
+		    	
+		    }
+			.head{
 				width: 980px;
-				margin: auto;
-				height: 30px;
-				background-color:white;
-				line-height:30px;
-				text-align: right;
-                margin-bottom: 2px;
+				height: 130px;
+				background-color: bisque;
 			}
-			#box{
-				position: fixed;
+			.logo{
+				background-image: url(img/QQ图片20171112185911.png);
+				width: 280px;
+				height: 130px;
+				background-size: cover;
+				float: left;
+			}
+			
+			.nb{
+				width: 980px;
+				height: 42px;
+				background-color: darkred;
+			}
+			.sourse{
+				width: 980px;
+				height: 130px;
+				background-color: white;
+			}
+			h3{
+				text-shadow: 3px 3px greenyellow;
+			}
+			.nb li{
+				list-style: none;
+				display: inline;
+				line-height: 42px;
+				height: 42px;
+				font-size: 20px;
+				text-align: center;
+				flex-basis: 20%;
+				
+			}
+			.nb li a{
+				line-height: 42px;
+				text-decoration: none;
+				color: white;
+				font-weight: 700;
+			}
+			.nb li a:hover{
+				background-color: brown;
+				line-height: 42px;
+			}
+			.center1{
+				width: 100%;
+              	display: flex;
+			}
+			.center2{
+				width: 100%;
+				display: flex;
+			}
+			.gezi{
+				width: 245px;
+				height: 355px;
+				
+			}
+			.gezi img{
+				background-size: 4;
+			}
+			.hh{
+				width:600px ;
+				height: 20px;
+				border: 1px solid;
+				margin-top: 35px;
+				
+			}
+			.kefu{
 				width: 100px;
 				height: 100px;
-			
-				border: 1px solid lightskyblue;
-				top: 20px;
-				right: 200px;
+				background-color: #FFE4C4;
+				position: fixed;
+				border: 1 solid;
+				margin-right: 0px;
+				margin-top: 200px;
 			}
-            cite {
-               font-style: normal;
-           }
-
-		    .heighter{margin: auto; center;width: 980px;}
-		    
-			.header{
-				height: 242px;
-				width: 980pxx;
-				margin: auto;
-				background-color: white;
+			.kefu p{
+				font-size: x-small;
+				text-align: center;
 			}
-			.kind{
-				width 980px;
-				height: 42px;
-				background-color: bisque;
-				margin-top: 3px;
-				margin-left: auto;
-				margin-right: auto;
+			.foot{
+				
 			}
-			.li{
-				width: 980px;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			.li a{
-				float: left;
-				padding: 0 7px;
-				line-height: 42px;
-				color: white;
-				font-size: 22px;
+			@media (min-width: 400px) {
+				.center gezi{
+					flex-basis: 50%;
 				}
-			.li a:hover{
-				color: burlywood;
-				}	
-		/*	.two{
-				height: 40px;
-				width: 20%;
-				float: left;
 			}
-			.three{
-				height: 40px;
-				width: 20%;
-				float: left;
+			@media (max-width: 600px) {
+				.center gezi{
+					flex-basis: 25%;
+					flex-grow: 1;
+				}
 			}
-			.four{
-				height: 40px;
-				width: 20%;
-				float: left;
-			}
-			.five{
-				height: 40px;
-				width: 20%;
-				float: left;
-			} */
-			.logo{
-				width: 200px;
-				height: 200px;
-				background-image: url(img/我的军训IMG20170929172511.jpg);
-				background-size: cover;
-				background-repeat: no-repeat;
-				float: left;
-			}
-			.pic{
-				width: 780px;
-				height: 200px;
-	
-				background-color: whitesmoke;
-				float: right;
-			}
-			.center{
-				background-color: coral;
-				height: 1040px;
-				width: 980px;
-			}
-			.footer{
-				background-color: white;
-				height: 500px;
-				width: 980px;
-			}
-			.whereandhere{
-				height: 1040px;
-				width: 630px;
-				float: left;
-				
-			}
-			.here{
-				background-color: #FFFFFF;
-				height: 1040px;
-				width: 300px;
-				float: left;
-			}
-			.here1{
-				border-bottom: 2px solid gainsboro ;
-				height: 350px;
-			}
-			.here1 a{
-				color: black;
-			}
-			.here1 a:hover{
-				color: blanchedalmond;
-			}
-			.here2{
-				border-bottom: 2px solid gainsboro;
-			}
-			.there{
-				background-color: white;
-				height: 1040px;
-				width: 350px;
-				float: right;
-			}
-			.where{
-				height: 1040px;
-				width: 330px;
-				float: right;
-				background-color: white;
-			}
-			.where1{
-				border-bottom:1px solid burlywood ;
-			}
-			.where2{
-				border-bottom: 1px solid burlywood;
-			}
-			
 		</style>
+		<title>我的小店</title>
 	</head>
-	<body >
-		<div id="box">
-			<a href="www.baidu.com"><img src="img/20120904081614262.jpg"/ ></a>
-		</div>
+	<body>
+	    <div class="kefu">
+	    	<p>我是在线客服<br/>tel:17373417880<br/>QQ:1306550821</p>
+	    </div>
 		<div class="heighter">
-			<div class="header">
+			<script>
+			window.onload = function()
+			{
+				alert("此网站为湘大网工郑诗欣的作业，不做任何商业用途，版权归郑诗欣所有");
+			}
+		</script>
+
+		<div class="head">
 			<div class="logo"></div>
-			<div class="pic"><h1 align="center"><font color="coral">广告位出租，有意请联系110</font></h1></div>
-			<div class="kind">
-			<div class="li">
-				<a href="www.baidu.com" style="text-decoration: none;">棋协头条&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">论坛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">活动&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">问答&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">社区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">嗯哼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">朋友&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">新生赛&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				<a href="www.baidu.com" style="text-decoration: none;">加入我们&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+			<div class="sourse">
+				<h3>本店承诺，以下商品均不属于本店所有，各位客官可点击图片自行购买</h3>
+				<input type="text" class="hh" placeholder="请输入要搜索的词"/><input type="button" value="search" />
 			</div>
+			</div>
+		
+		<div class="nb">
+				<ul>
+					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购物车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收藏夹&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的小店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+				</ul>
 		</div>
-		<div class="center">
-			<div class="whereandhere">
-				<div class="here">
-					<div class="here1">
-				<img src="img/Cache_-1d9827f90c86b103..jpg" width="350px" height="220px"/>
-				<p><a href="www.baidu.com" style="text-decoration: none;color: black;font-weight: bolder;">专访棋协会长————潘嘉程：皮皮程历险记</a></p>
-				<br/><p style="font-weight: 100;font-size: smaller;">
-					几百万的围棋历程告诉你，如何从一个皮皮虾变成一代宗师。</p><br />
-				</div><br />
-					<div class="here2">
-					<p><a href="www.baidu.com" style="text-decoration: none;color: black;">我也不知道该写什么之一</a></p><br />
-					<p><a href="www.baidu.com" style="text-decoration: none;color: black;">我也不知道该写什么之二</a></p><br />
-					</div><br />
-					<h4 style="color: red;" align="center">棋协的小朋友获得的奖项</h4>
-					<img src="img/null451fa75039b4ec25.jpg" width="350px" height="240px" />
-					<h4 style="color: red;"align="center"><br/>棋协小朋友平时的训练</h4>
-					<img src="img/null-70c267d15574fa6d.jpg" width="350px"height="247px" />
-					
-					</div>
-					
-					<div class="where">
-				<img src="img/QQ图片20171020173008.png" width="100%"/>
-				<div class="where1">
-                <h3>&nbsp;&nbsp;<a href="http://sports.sina.com.cn/zt_d/weiqiai/" style="text-decoration: none;font-weight: 200;color: red;font-weight: 500;align-content: center;">AlphaGo Zero自学21天虐Master</a></h3><br />
-                &nbsp;&nbsp;<a href="http://sports.sina.com.cn/go/2017-10-19/doc-ifymzqpq2417066.shtml" style="text-decoration: none;font-weight: 200;color: black;font-weight: 200;">&nbsp;棋葩说：Master你也有今天</a><br />
-                <br/><br/>&nbsp;&nbsp;<a href="http://sports.sina.com.cn/go/2017-10-19/doc-ifymzqpq2304098.shtml" style="text-decoration: none;font-weight: 200;color: black;font-weight: 200;">&nbsp;柯洁：人类太多余</a><br />
-                <br/><br/>&nbsp;&nbsp;<a href="http://sports.firefox.sina.com/17/1019/10/PLHCZQN3BJ9RWUMF.html" style="text-decoration: none;font-weight: 200;color: black;font-weight: 200;">&nbsp;Alpha之父:希望利用技术改变命运</a><br />
-                <br/></div>
-                <div class="where2">
-                <br/>&nbsp;&nbsp;<h3><a href="http://www.zgxqds.com/blog/article.asp?id=63153" style="text-decoration: none;font-weight: 200;color: red;font-weight: 500;">&nbsp;2017年全国象棋锦标赛(个人)参赛棋手名单</a></h3><br />
-                &nbsp;&nbsp;<a href="http://www.zgxqds.com/blog/article.asp?id=60985" style="text-decoration: none;font-weight: 200;color: black;font-weight: 200;">&nbsp;关于全球象棋双人邀请赛等赛事的裁判安排</a><br />
-                <br/><br/>&nbsp;&nbsp;<a href="http://www.zgxqds.com/blog/article.asp?id=60751" style="text-decoration: none;font-weight: 200;color: black;font-weight: 200;">&nbsp;全国象棋女子甲级联赛预选赛注册报名结果</a><br />
-                <br/></div>
-                <h4 style="color: red;"align="center"><br />棋盘套路</h4>
-                	
-				<img src="img/null138257c5f90442be.jpg" width="280px"height="250px" />
-				<img src="img/null-212de24fc89b1730.jpg" width="280px"height="250px"/>
-				
-			</div>
-					</div>
-						
-			<div class="there">
-				<img src="img/52830c2442a7d933c583ad81ac4bd11372f001cc.jpg" width="350px" /><br />
-				<p style="color: darkslategray;font: '楷体';">&nbsp;&nbsp;善棋者筹谋睿智</p><br />
-				<img src="img/8c68cfbf6c81800ad4f4c2fcb03533fa838b47db.jpg"width="350px" /><br />
-				<p style="color: darkslategray;">&nbsp;&nbsp;棋，颠倒苍生亦是奇。黑白子，何必论高低。</p><br />
-				<p style="color: darkslategray;">&nbsp;&nbsp;棋，百战千回制敌奇。施谋略，方寸决雄雌。</p><br />
-				<p style="color: darkslategray;">&nbsp;&nbsp;棋，黑白相交藏玄机。险中求，苦战日落西。</p><br />
-				<img src="img/80f452da81cb39db4ac32ca4d1160924aa1830f5.jpg" width="350px"/><br />
-				<p style="color: darkslategray;">&nbsp;&nbsp;棋，身陷局中竟惘迷。惊回首，盘外解危机</p><br />
-				<p style="color: darkslategray;">&nbsp;&nbsp;棋，善谋，处世道，运筹帷幄，摆珍珑仕途</p><br />
-			</div>
+		<div class="center1">
+			
+			<div class="gezi"><a href="https://item.taobao.com/item.htm?id=560007433853&ali_refid=a3_430673_1006:1122084080:N:%E5%A5%B3%E8%A3%85:a9e2bd76f6390740f3b3c03fec2ce58d&ali_trackid=1_a9e2bd76f6390740f3b3c03fec2ce58d&spm=a2e15.8261149.07626516002.9">
+				<img src="img/QQ截图20171112210001.jpg" />
+			</a></div>
+			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=560043222154&ali_refid=a3_430673_1006:1106115698:N:%E5%A5%B3%E8%A3%85:6f330e3c121073e012184471b23466c4&ali_trackid=1_6f330e3c121073e012184471b23466c4&spm=a2e15.8261149.07626516002.7">
+				<img src="img/QQ截图20171112210019.jpg" />
+			</a></div>
+			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=555267799586&ali_refid=a3_430673_1006:1106393911:N:皮带:23d64b614f972652bff18e1fa6a90471&ali_trackid=1_23d64b614f972652bff18e1fa6a90471&spm=a2e15.8261149.07626516002.7">
+				<img src="img/QQ截图20171112210119.jpg" />
+			</a></div>
+			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=39310680818&ali_refid=a3_430673_1006:1109283896:N:皮带:076506d0dc05fc77843e447a6f8efd05&ali_trackid=1_076506d0dc05fc77843e447a6f8efd05&spm=a2e15.8261149.07626516002.13">
+				<img src="img/QQ截图20171112210155.jpg" />
+			</a></div>
+		</div>
+		<div class="center2">
+			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=553335921998&ali_refid=a3_430673_1006:1102682080:N:%E8%BF%90%E5%8A%A8%E9%9E%8B:21c8b9158ebeb5a75aa23ce933568820&ali_trackid=1_21c8b9158ebeb5a75aa23ce933568820&spm=a2e15.8261149.07626516002.34">
+				<img src="img/QQ截图20171112212938.jpg" />
+			</a></div>
+			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=555941006343&ali_refid=a3_430673_1006:1151063706:N:%E8%BF%90%E5%8A%A8%E9%9E%8B:1679ff42227c68ceb365d7ba1526e55d&ali_trackid=1_1679ff42227c68ceb365d7ba1526e55d&spm=a2e15.8261149.07626516002.28">
+				<img src="img/QQ截图20171112212915.jpg" />
+			</a></div>
+			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=534742310075&ali_refid=a3_430673_1006:1104964286:N:运动鞋:7ed1d69f14f095ed87afc1c0d90d02c7&ali_trackid=1_7ed1d69f14f095ed87afc1c0d90d02c7&spm=a2e15.8261149.07626516002.39">
+				<img src="img/QQ截图20171112213001.jpg" />
+			</a></div>
+			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=559024347489&ali_refid=a3_430673_1006:1103240172:N:运动的鞋:ad60e2b4c824159fb13bea6e1b28c79a&ali_trackid=1_ad60e2b4c824159fb13bea6e1b28c79a&spm=a2e15.8261149.07626516002.44">
+				<img src="img/QQ截图20171112213048.jpg" />
+			</a></div>
+		</div>
+		<div class="foot">
 			
 		</div>
-		<div class="footer"></div>
 		</div>
 	</body>
 </html>
+			
