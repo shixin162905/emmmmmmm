@@ -3,173 +3,328 @@
 	<head>
 		<meta charset="utf-8" />
 		<style type="text/css">
-		
-		    .heighter{
-		    	margin: auto;center;width: 980px;
-		    	
-		    }
-			.head{
-				width: 980px;
-				height: 130px;
-				background-color: bisque;
-			}
-			.logo{
-				background-image: url(img/QQ图片20171112185911.png);
-				width: 280px;
-				height: 130px;
-				background-size: cover;
-				float: left;
-			}
-			
-			.nb{
-				width: 980px;
-				height: 42px;
-				background-color: darkred;
-			}
-			.sourse{
-				width: 980px;
-				height: 130px;
-				background-color: white;
-			}
-			h3{
-				text-shadow: 3px 3px greenyellow;
-			}
-			.nb li{
-				list-style: none;
-				display: inline;
-				line-height: 42px;
-				height: 42px;
-				font-size: 20px;
-				text-align: center;
-				flex-basis: 20%;
-				
-			}
-			.nb li a{
-				line-height: 42px;
-				text-decoration: none;
-				color: white;
-				font-weight: 700;
-			}
-			.nb li a:hover{
-				background-color: brown;
-				line-height: 42px;
-			}
-			.center1{
-				width: 100%;
-              	display: flex;
-			}
-			.center2{
-				width: 100%;
-				display: flex;
-			}
-			.gezi{
-				width: 245px;
-				height: 355px;
-				
-			}
-			.gezi img{
-				background-size: 4;
-			}
-			.hh{
-				width:600px ;
-				height: 20px;
-				border: 1px solid;
-				margin-top: 35px;
-				
-			}
-			.kefu{
-				width: 100px;
-				height: 100px;
-				background-color: #FFE4C4;
-				position: fixed;
-				border: 1 solid;
-				margin-right: 0px;
-				margin-top: 200px;
-			}
-			.kefu p{
-				font-size: x-small;
-				text-align: center;
-			}
-			.foot{
-				
-			}
-			@media (min-width: 400px) {
-				.center gezi{
-					flex-basis: 50%;
-				}
-			}
-			@media (max-width: 600px) {
-				.center gezi{
-					flex-basis: 25%;
-					flex-grow: 1;
-				}
-			}
+			body {
+  margin: 0;
+  padding:0;
+  height: 100%
+}
+
+.sky {
+  height: 480px;
+  background: #007fd5;
+  position: relative;
+  overflow: hidden;
+  -webkit-animation: sky_background 50s ease-out infinite;
+  -moz-animation: sky_background 50s ease-out infinite;
+  -o-animation: sky_background 50s ease-out infinite;
+  animation: sky_background 50s ease-out infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_one {
+  background: url(img/cloud_one.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_one 50s linear infinite;
+  -moz-animation: cloud_one 50s linear infinite;
+  -o-animation: cloud_one 50s linear infinite;
+  animation: cloud_one 50s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_two {
+  background: url(img/cloud_two.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_two 75s linear infinite;
+  -moz-animation: cloud_two 75s linear infinite;
+  -o-animation: cloud_two 75s linear infinite;
+  animation: cloud_two 75s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_three {
+  background: url(img/cloud_three.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 300%;
+  -webkit-animation: cloud_three 100s linear infinite;
+  -moz-animation: cloud_three 100s linear infinite;
+  -o-animation: cloud_three 100s linear infinite;
+  animation: cloud_three 100s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes sky_background {
+  0% {
+	background: #007fd5;
+	color: #007fd5
+  }
+  50% {
+	background: #000;
+	color: #a3d9ff
+  }
+  100% {
+	background: #007fd5;
+	color: #007fd5
+  }
+}
+@-moz-keyframes sky_background {
+  0% {
+	background: #007fd5;
+	color: #007fd5
+  }
+  50% {
+	background: #000;
+	color: #a3d9ff
+  }
+  100% {
+	background: #007fd5;
+	color: #007fd5
+  }
+}
+@keyframes sky_background {
+  0% {
+	background: #007fd5;
+	color: #007fd5
+  }
+  50% {
+	background: #000;
+	color: #a3d9ff
+  }
+  100% {
+	background: #007fd5;
+	color: #007fd5
+  }
+}
+
+@-webkit-keyframes cloud_one {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@-moz-keyframes cloud_one {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@keyframes cloud_one {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_two {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@-moz-keyframes cloud_two {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@keyframes cloud_two {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+
+@-webkit-keyframes cloud_three {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@-moz-keyframes cloud_three {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+@keyframes cloud_three {
+  0% {
+	left: 0
+  }
+  100% {
+	left: -200%
+  }
+}
+.trunk, .trunk div {
+    background: #136086;
+    /*border-radius:$w;*/
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left:50%;
+    top:70%;
+    margin-left: -10px;
+    -webkit-animation-name: rot;
+            animation-name: rot;
+    -webkit-animation-duration: 2.02s;
+            animation-duration: 2.02s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-transform-origin: 5px 5px;
+        -ms-transform-origin: 5px 5px;
+            transform-origin: 5px 5px;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+
+}
+.trunk.trunk, .trunk div.trunk {
+    bottom: 0;
+    left: 50%;
+    -webkit-animation-name: rot-root;
+            animation-name: rot-root;
+    -webkit-animation-duration: 2.5s;
+            animation-duration: 2.5s;
+}
+.trunk > div, .trunk div > div {
+    /*opacity:0.9;*/
+    top: 0;
+    left: 100px;
+    -webkit-animation-duration: calc(inherit / 2);
+            animation-duration: calc(inherit / 2);
+    /* don't works  */
+}
+.trunk > div:nth-child(2), .trunk div > div:nth-child(2) {
+    /*animation-duration:15s;*/
+    -webkit-animation-name: rot-inv;
+            animation-name: rot-inv;
+    -webkit-animation-duration: 1.7s;
+            animation-duration: 1.7s;
+}
+
+@-webkit-keyframes rot {
+    from {
+      -webkit-transform: rotate(15deg) scale(0.72);
+              transform: rotate(15deg) scale(0.72);
+    }
+    to {
+      -webkit-transform: rotate(45deg) scale(0.72);
+              transform: rotate(45deg) scale(0.72);
+    }
+}
+
+@keyframes rot {
+    from {
+      -webkit-transform: rotate(15deg) scale(0.72);
+              transform: rotate(15deg) scale(0.72);
+    }
+    to {
+      -webkit-transform: rotate(45deg) scale(0.72);
+              transform: rotate(45deg) scale(0.72);
+    }
+}
+@-webkit-keyframes rot-inv {
+    from {
+      -webkit-transform: rotate(-45deg) scale(0.72);
+              transform: rotate(-45deg) scale(0.72);
+    }
+    to {
+      -webkit-transform: rotate(-15deg) scale(0.72);
+              transform: rotate(-15deg) scale(0.72);
+    }
+}
+@keyframes rot-inv {
+    from {
+      -webkit-transform: rotate(-45deg) scale(0.72);
+              transform: rotate(-45deg) scale(0.72);
+    }
+    to {
+      -webkit-transform: rotate(-15deg) scale(0.72);
+              transform: rotate(-15deg) scale(0.72);
+    }
+}
+@-webkit-keyframes rot-root {
+    from {
+      -webkit-transform: rotate(-95deg);
+              transform: rotate(-95deg);
+    }
+    to {
+      -webkit-transform: rotate(-85deg);
+              transform: rotate(-85deg);
+    }
+}
+@keyframes rot-root {
+    from {
+      -webkit-transform: rotate(-95deg);
+              transform: rotate(-95deg);
+    }
+    to {
+      -webkit-transform: rotate(-85deg);
+              transform: rotate(-85deg);
+    }
+}
+.lanren{
+		width:156px;
+		height:156px;
+		margin:270px auto;
+		background:url(img/foxtail.png) no-repeat 0 0;
+		animation:animate-tail 3.75s steps(44) infinite;
+	}
+	@keyframes animate-tail{
+		0%{background-position:-6864px 0;}
+		100%{background-position:0 0;}
+	}
 		</style>
-		<title>我的小店</title>
+		<title>五毛特效</title>
 	</head>
 	<body>
-	    <div class="kefu">
-	    	<p>我是在线客服<br/>tel:17373417880<br/>QQ:1306550821</p>
-	    </div>
-		<div class="heighter">
-			<script>
-			window.onload = function()
-			{
-				alert("此网站为湘大网工郑诗欣的作业，不做任何商业用途，版权归郑诗欣所有");
-			}
-		</script>
+		<div class="box1">
+			<div class="sky">
+				<div class="clouds_one"></div>
+				<div class="clouds_two"></div>
+				<div class="clouds_three"></div>
+							<div class="lanren"></div>
+			</div>
+			<div class="trunk"><div><div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div></div><div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div></div></div><div><div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div></div><div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div><div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div><div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div><div><div><div><div></div><div></div></div><div><div></div><div></div></div></div><div><div><div></div><div></div></div><div><div></div><div></div></div></div></div></div></div></div></div></div>
 
-		<div class="head">
-			<div class="logo"></div>
-			<div class="sourse">
-				<h3>本店承诺，以下商品均不属于本店所有，各位客官可点击图片自行购买</h3>
-				<input type="text" class="hh" placeholder="请输入要搜索的词"/><input type="button" value="search" />
-			</div>
-			</div>
-		
-		<div class="nb">
-				<ul>
-					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购物车&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收藏夹&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类中心&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系客服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-					<li><a href="www.baidu.com">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的小店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-				</ul>
-		</div>
-		<div class="center1">
-			
-			<div class="gezi"><a href="https://item.taobao.com/item.htm?id=560007433853&ali_refid=a3_430673_1006:1122084080:N:%E5%A5%B3%E8%A3%85:a9e2bd76f6390740f3b3c03fec2ce58d&ali_trackid=1_a9e2bd76f6390740f3b3c03fec2ce58d&spm=a2e15.8261149.07626516002.9">
-				<img src="img/QQ截图20171112210001.jpg" />
-			</a></div>
-			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=560043222154&ali_refid=a3_430673_1006:1106115698:N:%E5%A5%B3%E8%A3%85:6f330e3c121073e012184471b23466c4&ali_trackid=1_6f330e3c121073e012184471b23466c4&spm=a2e15.8261149.07626516002.7">
-				<img src="img/QQ截图20171112210019.jpg" />
-			</a></div>
-			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=555267799586&ali_refid=a3_430673_1006:1106393911:N:皮带:23d64b614f972652bff18e1fa6a90471&ali_trackid=1_23d64b614f972652bff18e1fa6a90471&spm=a2e15.8261149.07626516002.7">
-				<img src="img/QQ截图20171112210119.jpg" />
-			</a></div>
-			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=39310680818&ali_refid=a3_430673_1006:1109283896:N:皮带:076506d0dc05fc77843e447a6f8efd05&ali_trackid=1_076506d0dc05fc77843e447a6f8efd05&spm=a2e15.8261149.07626516002.13">
-				<img src="img/QQ截图20171112210155.jpg" />
-			</a></div>
-		</div>
-		<div class="center2">
-			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=553335921998&ali_refid=a3_430673_1006:1102682080:N:%E8%BF%90%E5%8A%A8%E9%9E%8B:21c8b9158ebeb5a75aa23ce933568820&ali_trackid=1_21c8b9158ebeb5a75aa23ce933568820&spm=a2e15.8261149.07626516002.34">
-				<img src="img/QQ截图20171112212938.jpg" />
-			</a></div>
-			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=555941006343&ali_refid=a3_430673_1006:1151063706:N:%E8%BF%90%E5%8A%A8%E9%9E%8B:1679ff42227c68ceb365d7ba1526e55d&ali_trackid=1_1679ff42227c68ceb365d7ba1526e55d&spm=a2e15.8261149.07626516002.28">
-				<img src="img/QQ截图20171112212915.jpg" />
-			</a></div>
-			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=534742310075&ali_refid=a3_430673_1006:1104964286:N:运动鞋:7ed1d69f14f095ed87afc1c0d90d02c7&ali_trackid=1_7ed1d69f14f095ed87afc1c0d90d02c7&spm=a2e15.8261149.07626516002.39">
-				<img src="img/QQ截图20171112213001.jpg" />
-			</a></div>
-			<div class="gezi"><a href="https://detail.tmall.com/item.htm?id=559024347489&ali_refid=a3_430673_1006:1103240172:N:运动的鞋:ad60e2b4c824159fb13bea6e1b28c79a&ali_trackid=1_ad60e2b4c824159fb13bea6e1b28c79a&spm=a2e15.8261149.07626516002.44">
-				<img src="img/QQ截图20171112213048.jpg" />
-			</a></div>
-		</div>
-		<div class="foot">
-			
-		</div>
 		</div>
 	</body>
 </html>
-			
