@@ -2,242 +2,90 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
 		<style type="text/css">
-			<style>
-			<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>边栏过渡效果（Sidebar Transitions）</title>
-		<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
-		<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<!-- <link rel="stylesheet" type="text/css" href="css/icons.css" /> -->
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-
-		.top-banner {
-			z-index: 999;
-			text-align: right;
-			height: 30px !important;
-			line-height: 30px !important;
-		}
-		.top-banner a {
-			color:green !important;
-			text-shadow: none;
-		}
-		.column {
-			margin: 60px auto;
-			float: none;
-			text-align: center;
-			width: 75%;
-			min-height: 100px;
-		}
+			.name{
+				float: left;
+				width: 200px;
+				height: 300px;
+			}
+			.group{
+				width: 200px;
+				height: 300px;
+				float: left;
+			}
+			.introduction{
+				width: 300px;
+				height: 300px;
+				float: left;
+			}
+			.bright{
+				width: 300px;
+				height: 300px;
+				float: left;
+			}
+			.profit{
+				width: 300px;
+				height: 300px;
+				float: left;
+			}
+			.operation{
+				width: 300px;
+				height: 200px;
+				
+			}
+			.touzi{
+				width: 300px;
+				height: 300px;
+				float: left;
+			}
+			.competition{
+				width: 300px;
+				height: 300px;
+				float: right;
+			}
 		</style>
-<script src="js/modernizr.custom.js"></script>
-		<link rel="stylesheet" href="http://www.yyyweb.com/demo/common/init.css">
-		<script src="http://www.yyyweb.com/demo/common/jquery.min.js"></script>
-		<script src="http://www.yyyweb.com/demo/common/init.js"></script>	
 		
+		<title></title>
 	</head>
 	<body>
-		<div id="st-container" class="st-container">
-			<!-- 	
-				example menus 
-				these menus will be on top of the push wrapper
-			-->
-			<nav class="st-menu st-effect-1" id="menu-1">
-				<h2 class="icon icon-lab">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-			
-			<nav class="st-menu st-effect-2" id="menu-2">
-				<h2 class="icon icon-stack">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-
-			<nav class="st-menu st-effect-4" id="menu-4">
-				<h2 class="icon icon-lab">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-
-			<nav class="st-menu st-effect-5" id="menu-5">
-				<h2 class="icon icon-stack">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-			
-			<nav class="st-menu st-effect-9" id="menu-9">
-				<h2 class="icon icon-lab">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-			
-			<nav class="st-menu st-effect-10" id="menu-10">
-				<h2 class="icon icon-stack">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-			
-			<nav class="st-menu st-effect-11" id="menu-11">
-				<h2 class="icon icon-lab">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-
-			<nav class="st-menu st-effect-12" id="menu-12">
-				<h2 class="icon icon-stack">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-
-			<nav class="st-menu st-effect-13" id="menu-13">
-				<h2 class="icon icon-stack">Sidebar</h2>
-				<ul>
-					<li><a class="icon icon-data" href="#">Data Management</a></li>
-					<li><a class="icon icon-location" href="#">Location</a></li>
-					<li><a class="icon icon-study" href="#">Study</a></li>
-					<li><a class="icon icon-photo" href="#">Collections</a></li>
-					<li><a class="icon icon-wallet" href="#">Credits</a></li>
-				</ul>
-			</nav>
-
-			<!-- content push wrapper -->
-			<div class="st-pusher">
-				<!-- 	
-					example menus 
-					these menus will be under the push wrapper
-				-->
-				<nav class="st-menu st-effect-3" id="menu-3">
-					<h2 class="icon icon-lab">Sidebar</h2>
-					<ul>
-						<li><a class="icon icon-data" href="#">Data Management</a></li>
-						<li><a class="icon icon-location" href="#">Location</a></li>
-						<li><a class="icon icon-study" href="#">Study</a></li>
-						<li><a class="icon icon-photo" href="#">Collections</a></li>
-						<li><a class="icon icon-wallet" href="#">Credits</a></li>
-					</ul>
-				</nav>
-
-				<nav class="st-menu st-effect-6" id="menu-6">
-					<h2 class="icon icon-stack">Sidebar</h2>
-					<ul>
-						<li><a class="icon icon-data" href="#">Data Management</a></li>
-						<li><a class="icon icon-location" href="#">Location</a></li>
-						<li><a class="icon icon-study" href="#">Study</a></li>
-						<li><a class="icon icon-photo" href="#">Collections</a></li>
-						<li><a class="icon icon-wallet" href="#">Credits</a></li>
-					</ul>
-				</nav>
-
-				<nav class="st-menu st-effect-7" id="menu-7">
-					<h2 class="icon icon-lab">Sidebar</h2>
-					<ul>
-						<li><a class="icon icon-data" href="#">Data Management</a></li>
-						<li><a class="icon icon-location" href="#">Location</a></li>
-						<li><a class="icon icon-study" href="#">Study</a></li>
-						<li><a class="icon icon-photo" href="#">Collections</a></li>
-						<li><a class="icon icon-wallet" href="#">Credits</a></li>
-					</ul>
-				</nav>
-
-				<nav class="st-menu st-effect-8" id="menu-8">
-					<h2 class="icon icon-stack">Sidebar</h2>
-					<ul>
-						<li><a class="icon icon-data" href="#">Data Management</a></li>
-						<li><a class="icon icon-location" href="#">Location</a></li>
-						<li><a class="icon icon-study" href="#">Study</a></li>
-						<li><a class="icon icon-photo" href="#">Collections</a></li>
-						<li><a class="icon icon-wallet" href="#">Credits</a></li>
-					</ul>
-				</nav>
-
-				<nav class="st-menu st-effect-14" id="menu-14">
-					<h2 class="icon icon-stack">Sidebar</h2>
-					<ul>
-						<li><a class="icon icon-data" href="#">Data Management</a></li>
-						<li><a class="icon icon-location" href="#">Location</a></li>
-						<li><a class="icon icon-study" href="#">Study</a></li>
-						<li><a class="icon icon-photo" href="#">Collections</a></li>
-						<li><a class="icon icon-wallet" href="#">Credits</a></li>
-					</ul>
-				</nav>
-
-				<div class="st-content"><!-- this is the wrapper for the content -->
-					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-						<header class="codrops-header">
-							<h1>边栏过渡效果（Sidebar Transitions）</h1>
-						</header>
-						<div class="main clearfix">
-							<div id="st-trigger-effects" class="column">
-								<button data-effect="st-effect-1">效果一</button>
-								<button data-effect="st-effect-2">效果二</button>
-								<button data-effect="st-effect-3">效果三</button>
-								<button data-effect="st-effect-4">效果四</button>
-								<button data-effect="st-effect-5">效果五</button>
-								<button data-effect="st-effect-6">效果六</button>
-								<button data-effect="st-effect-7">效果七</button>
-								<button data-effect="st-effect-8">效果八</button>
-								<button data-effect="st-effect-9">效果九</button>
-								<button data-effect="st-effect-10">效果十</button>
-								<button data-effect="st-effect-11">效果十一</button>
-								<button data-effect="st-effect-12">效果十二</button>
-								<button data-effect="st-effect-13">效果十三</button>
-								<button data-effect="st-effect-14">效果十四</button>
-							</div>
-						</div><!-- /main -->
-						<div class="footer-banner" style="width:728px; margin:160px auto 0"></div>
-					</div><!-- /st-content-inner -->
-				</div><!-- /st-content -->
-			</div><!-- /st-pusher -->
-		</div><!-- /st-container -->
-		<script src="js/classie.js"></script>
-		<script src="js/sidebarEffects.js"></script>
-
+		<div class="big">
+		    <div class="name">
+		        <input type="button" onclick="document.getElementById('1').style.display='';"value="项目名称" />
+		        <div id="1" style="display: none;"><p><font color="firebrick" size="3">替身计划</font></p></div>
+		    </div>
+		    <div class="introduction">
+		    	<input type="button" onclick="document.getElementById('2').style.display='';"value="项目简介" />
+		        <div id="2" style="display: none;"><p><font color="darkslategray" size="3">“替身计划”，是那些需要替身的人的福音。它提供男，女，老，少各类人群，会挨打会演戏，多才多艺无所不能，只要您能付得起相应的报酬，一切都不是问题。从此以后再也不用担心面对催婚催对象的亲戚们，再也不用沉浸在失恋的痛苦中无法自拔，再也不用担心同学聚会没有面子，也再也不用担心在学校惹了事被叫家长了（我是省略号）</font></p></div>
+		    </div>
+		    <div class="group">
+		    	<input type="button" onclick="document.getElementById('3').style.display='';"value="目标群体" />
+		        <div id="3" style="display: none;"><p><font color="firebrick" size="3">不论男女老少，皆有不得不找替身的烦恼，因此均可以成为本项目的客户。</font></p></div>
+		    </div>
+		    <div class="bright">
+		    	<input type="button" onclick="document.getElementById('4').style.display='';"value="项目亮点" />
+		        <div id="4" style="display: none;"><p><font color="darkslategray" size="3">众所周知，现如今人们的压力越来越大，越来越多，很多时候，人们都需要面对一些无法避免却又意义不大的问题，本项目即可替您解决那些问题。如年轻人工作压力大，还没有做好步入婚姻殿堂的准备，也没有找对象的准备，而本项目便可为您提供一个暂时的女朋友去对付家长，诸如此类。本项目提供的是“替身”这一服务，比较新颖，比较潮流。在大学中存在许多“代xx”的行为，如代课，代讲座，代考，代跑，有买才有卖，有需求才有市场，本项目在不违反法律的情况下尽力满足客户的需求，我相信本产业若是能运营的好，一定能带动此方面蒸蒸日上。</font></p></div>
+		    </div>
+		    <div class="profit">
+		    	<input type="button" onclick="document.getElementById('5').style.display='';"value="项目盈利模式" />
+		        <div id="5" style="display: none;"><p><font color="firebrick" size="3">本项目招揽的员工分为两种，一种是与公司签约的长期员工，每月有固定的工资，完成规定的工作任务后还可获得提成，另一种是临时员工，交押金后，可以在本项目平台上接任务，但是相对收益较长期员工低，任何一种员工皆需通过面试等，以确保让顾客满意。而顾客可向本项目平台说明需要，交定金，等到员工完成任务后付剩下的钱。</font></p></div>
+		    </div>
+		    <div class="operation">
+		    	<input type="button" onclick="document.getElementById('6').style.display='';"value="项目运营计划" />
+		        <div id="6" style="display: none;"><p><font color="darkslategray" size="3">本公司分为三六九等，素质高的为高等，每月固定工资为1800元，每月为公司接下不少于3000元订单即可获得固定工资，并可获得所接订单金额的30%提成；次一等的员工每月固定工资1200元，每月为公司接下不少于2000元订单即可获得固定工资，并可获得所接订单金额的28%提成；再次等的员工每月固定工资800元，每月为公司接下不少于1500元即可获得固定工资，并可获得所接订单的25%提成。而临时员工月初交300押金后即可在本公司接任务，可获得所接订单的20%提成（本公司的大客户均由高等员工接待）。此外，本公司有负责培训的老师，每月工资为3000元，制作和维修运营本项目网站的工程师（包括我）每月工资5000元。</font></p></div>
+		    </div>
+		    <div class="touzi">
+		    	<input type="button" onclick="document.getElementById('7').style.display='';"value="项目投资计划" />
+		        <div id="7" style="display: none;"><p><font color="darkslategray" size="3">本项目的资金来源有三条。
+1.自己先参加工作，争取一些钱财，并积累相应的经验。
+2.像父母借用一些钱财，待公司开始盈利后归还给父母。
+3.寻找合伙人，一起入股。
+而寻得的资金则用于为员工们发工资，对员工进行培训，对该项目进行相关的宣传，建立相关网站得以运营该项目。</font></p></div>
+		    </div>
+		    <div><a href="https://pan.wps.cn/l/svuu6de">下载企业计划书请戳此处</a></div>
+		    <div class="competition">
+		    	<input type="button" onclick="document.getElementById('8').style.display='';"value="核心竞争力及竞争分析" />
+		        <div id="8" style="display: none;"><p><font color="darkslategray" size="2">自本项目提出之前，我从未听说过有任何的关于做替身的专业产业，也百度过，可是除了动画片和小说以外，并没有关于此类产业。我认为出现这种情况可喜可忧，喜的是本项目存在的竞争对手很少甚至没有，忧的是在这个有需求的产业均应运而生的时代竟然不存在替身这么重要的产业，或许曾经有过但是已经倒闭了。虽然没有与之相关的专业项目，但是存在一些个人或者不正规的小团体有做替身的行为，例如上面所讲的“代xx”，不够严谨有风险，并且有一些触犯法律的行为，但是他们胜在方便，而本项目很安全，有严谨的企业结构，并且不会触犯法律，缺点是程序繁琐了些。</font></p></div>
+		    </div>
+		</div>
 	</body>
 </html>
